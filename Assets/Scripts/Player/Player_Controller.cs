@@ -126,7 +126,7 @@ public class Player_Controller : MonoBehaviour
     {
         HPCheat += 20;
         HPBar.setMaxHP(PlayerStat.Ins.playerHP + HPCheat);
-        text.text = $"+ 20 HP Max";
+        text.text = $"Cheat 20 HP Max";
         StartCoroutine(HideText(2f));
     }
 }

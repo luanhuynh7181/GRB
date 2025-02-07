@@ -27,7 +27,7 @@ public class Barrel_Boom : MonoBehaviour
         Refresh();
     }
 
-    public void OnCollisionStay2D(Collision2D collision)
+    public void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.name != "Player")
             return;
@@ -36,7 +36,7 @@ public class Barrel_Boom : MonoBehaviour
         isExplose = false;
         collision
             .gameObject.GetComponent<Player_Controller>()
-            ?.DealDame(ENERMY_TYPE.BARREL_BOOM, transform, false);
+            ?.DealDame(ENERMY_TYPE.BARREL_BOOM, transform, true);
     }
 
     IEnumerator MoveParabola()

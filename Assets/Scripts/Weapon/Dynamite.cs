@@ -5,25 +5,29 @@ public class Dynamite : MonoBehaviour
 {
     private float height;
     private Vector2 target;
-
+    private bool isExplose = false;
     public void ExploseEnd() { }
 
     public void Init(Vector2 _target, float height)
     {
         target = _target;
         this.height = height;
+        isExplose = false;
         Refresh();
     }
 
-    public void OnCollisionStay2D(Collision2D collision)
+    public void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.name != "Player")
             return;
+        if(isExplose)
+            return;
+        isExplose = true;
         collision
             .gameObject.GetComponent<Player_Controller>()
             ?.DealDame(GameConstants.ENERMY_TYPE.GOBLIN, transform, true);
     }
-
+  
     IEnumerator MoveParabola()
     {
         float time = 0;

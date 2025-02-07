@@ -16,7 +16,6 @@ public class TNT_Movement : Goblin_Movement
     {
         GameObject obj = ObjectPoolManager.Instance.GetFromPool(GameConstants.POOL_TYPE.DYNAMITE);
         obj.transform.position = transform.position;
-        Debug.Log(obj.name);
         Dynamite boom = obj.GetComponent<Dynamite>();
         boom.Init(player.transform.position, Random.Range(3, 5));
     }

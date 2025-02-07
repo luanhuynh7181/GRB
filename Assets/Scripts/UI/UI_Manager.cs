@@ -1,5 +1,6 @@
 using System;
 using GameConstants;
+using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class UI_Manager : MonoBehaviour
@@ -25,6 +26,7 @@ public class UI_Manager : MonoBehaviour
         nodeWave.SetActive(false);
         PopupEndGame.SetActive(false);
         nodePlay.SetActive(false);
+        UIInfo.SetActive(false);
         posNodeWave = nodeWave.transform.position;
     }
 
