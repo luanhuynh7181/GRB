@@ -1,0 +1,64 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Enermy
+  - Ground
+  - Wall
+  - Boss
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Player_Ground
+  - Player_Mountain
+  - Enermy_Ground
+  - Enermy_Mountain
+  - Obtascle
+  - Enermy_Weapon_Mountain
+  - Enermy_Weapon_Ground
+  - Player_Weapon_Mountain
+  - Player_Weapon_Ground
+  - Enermy_In_Tower
+  - ItemHP
+  - 
+  - Wall
+  - Ground
+  - Stair
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 1612131159
+    locked: 0
+  - name: Ground_Object
+    uniqueID: 44910293
+    locked: 0
+  - name: Mountain
+    uniqueID: 4078968309
+    locked: 0
+  - name: Mountain_Object
+    uniqueID: 753584893
+    locked: 0
+  - name: Lightning
+    uniqueID: 389031441
+    locked: 0
+  m_RenderingLayers:
+  - Default

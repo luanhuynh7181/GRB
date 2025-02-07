@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 5ddae4eb449cdb44480408cd7656d6e8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - arrowPrefab: {fileID: 3845334690547706507, guid: 4c9eb641843561747b597c16a4ba8946, type: 3}
+  - barrelBoomPrefab: {fileID: 1169073183153129025, guid: 6de69d305c1a0e844ac6d0acd4d5d2e7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
